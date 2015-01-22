@@ -34,7 +34,7 @@ public class Truck extends Vehicle {
 		
 		@Override
 		public void decelerate() {
-			this.speed -= 6;
+			this.speed -= 3;
 			if(this.speed < 0) {
 				this.speed = 0;
 			}

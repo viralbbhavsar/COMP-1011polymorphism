@@ -7,7 +7,7 @@
  * Class Description: 
  *
  */
-public class Vehicle {
+public abstract class Vehicle {
 	
 	//PRIVATE properties-----------------------------------------------------------
 	
@@ -81,22 +81,13 @@ public class Vehicle {
 		this.year = year;	
 	}
 	
-	//PUBLIC methods----------------------------------------------------------
+	//PUBLIC abstract methods----------------------------------------------------------
 		
-	public void accelerate() {
-		this.speed += 4;
-		if(this.speed >= this.MAX_SPEED) {
-			this.speed = this.MAX_SPEED;
-		}
-			
-	}
+	public abstract void accelerate();
 	
-	public void decelerate() {
-		this.speed -= 6;
-		if(this.speed < 0) {
-			this.speed = 0;
-		}
-	}
+	public abstract void decelerate();
+	
+	//public methods-----------------------------------
 	
 	public void turnLeft() {
 		System.out.println("Turning Left");

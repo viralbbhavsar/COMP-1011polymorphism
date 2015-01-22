@@ -14,7 +14,7 @@ public class Project {
 	 */
 	public static void main(String[] args) {
 		
-		Vehicle myHonda = new Vehicle(4, 4, "black", "honda", "pilot", "2015");
+		SUV myHonda = new SUV("black", "honda", "pilot", "2015");
 		
 		Truck myTruck = new Truck(6, 3, "white", "ford", "FX", "2008");
 		
