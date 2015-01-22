@@ -11,14 +11,14 @@ public class Vehicle {
 	
 	//PRIVATE properties-----------------------------------------------------------
 	
-	private int numWheels = 4;
-	private int numDoors = 2;
+	protected int numWheels = 4;
+	protected int numDoors = 2;
 	private String colour = "";
 	private String make = "";
 	private String model = "";
 	private String year = "";
-	private float speed = 0;
-	private final int MAX_SPEED = 40;
+	protected float speed = 0;
+	protected final int MAX_SPEED = 40;
 	
 	//PUBLIC getters----------------------------------------------------------------
 	
@@ -64,9 +64,21 @@ public class Vehicle {
 		return this.year;
 	}
 	
-	//CONSTRUCTOR-------------------------------------------------------------
-	public Vehicle() {
-		
+	//CONSTRUCTORs-------------------------------------------------------------
+	public Vehicle(int wheels, int doors, String colour, String make, String model , String year) {
+		this.numWheels = wheels;
+		this.numDoors = doors;
+		this.colour = colour;
+		this.make = make;
+		this.model = model;
+		this.year = year;	
+	}
+	
+	public Vehicle(String colour, String make, String model , String year) {
+		this.colour = colour;
+		this.make = make;
+		this.model = model;
+		this.year = year;	
 	}
 	
 	//PUBLIC methods----------------------------------------------------------

@@ -14,8 +14,17 @@ public class Project {
 	 */
 	public static void main(String[] args) {
 		
-		Vehicle myVehicle = new Vehicle();
-
+		Vehicle myHonda = new Vehicle(4, 4, "black", "honda", "pilot", "2015");
+		
+		Truck myTruck = new Truck(6, 3, "white", "ford", "FX", "2008");
+		
+		for(int seconds = 0; seconds < 10; seconds++) {
+			myHonda.accelerate();
+			myTruck.accelerate();
+		}
+		System.out.println(myHonda.getSpeed());
+		System.out.println("Truck: "+ myTruck.getSpeed());
+	
 	}
 
 }
